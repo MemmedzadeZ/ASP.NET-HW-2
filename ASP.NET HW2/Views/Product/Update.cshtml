@@ -1,0 +1,30 @@
+﻿@model ProductRemoveViewModel
+
+<section>
+	<form asp-controller="Product" asp-action="Update">
+		<section>
+			<label asp-for="Products.Name"></label>
+			<input asp-for="Products.Name"/>
+			<span asp-validation-for="Products.Name" style="color:red"/>
+		</section>
+		<section>
+			<label asp-for="Products.Description"></label>
+			<input asp-for="Products.Description" />
+			<span asp-validation-for="Products.Description" style="color:red" />
+		</section>
+		<section>
+			<label asp-for="Products.Price"></label>
+			<input asp-for="Products.Price" />
+			<span asp-validation-for="Products.Price" style="color:red" />
+
+		</section>
+		<section>
+			<label asp-for="Products.Discount"></label>
+			<input asp-for="Products.Discount" />
+			<span asp-validation-for="Products.Discount" style="color:red" />
+		</section>
+		<section>
+			<button type="submit" >Submit</button>
+		</section>
+	</form>
+</section>
